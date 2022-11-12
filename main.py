@@ -85,4 +85,4 @@ for filename in os.listdir("./cogs"):
     client.load_extension(f"cogs.{filename[:-3]}")
 
 keep_alive()
-client.run(os.getenv("TOKE"))
+client.run(os.getenv("TOKEN"))
