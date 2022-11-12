@@ -94,16 +94,7 @@ class Event(commands.Cog):
             elif " bruh " in msg or msg.startswith(
                     "bruh ") or msg == "bruh" or msg.endswith(" bruh"):
                 await message.channel.send("BRUHH")
-
-            elif msg.startswith("wtf ") or msg.startswith(
-                    "f "
-            ) or msg.startswith("fuck ") or msg.startswith(
-                    "fock "
-            ) or msg.startswith(
-                    "fack "
-            ) or msg == "wtf" or msg == "f" or msg == "fuck" or msg == "fack" or msg == "fock":
-                await message.channel.send(random.choice(comebacks))
-
+                
             elif msg.startswith("imagine"):
                 await message.channel.send(random.choice(imagine_words))
 
@@ -114,16 +105,6 @@ class Event(commands.Cog):
                     new_m = new_m + "e " + new_l[i]
                 await message.channel.send(f"YEAH...{new_m}")
 
-            elif msg.startswith("i wish"):
-                await message.channel.send("Aukat me raho bsdk")
-
-            elif msg.startswith("pagal") or msg.startswith("abe pagal"):
-                await message.channel.send("Tu sab se bada chutiya he")
-
-            for seg in bot_roast:
-                if seg in msg:
-                    await message.channel.send(
-                        "Don't lump me in with your mom.")
 
 def setup(client):
     client.add_cog(Event(client))
